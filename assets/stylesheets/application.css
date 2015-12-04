@@ -398,7 +398,7 @@ th {
   font-family: "Znikomit";
   font-style: normal;
   font-weight: normal;
-  src: url("/assets/fonts/Znikomit.otf"); }
+  src: url("/assets/fonts/znikomit-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/znikomit-webfont.woff2") format("woff2"), url("/assets/fonts/znikomit-webfont.woff") format("woff"); }
 /* line 1, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/base/_buttons.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"],
 button {
