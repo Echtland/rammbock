@@ -9210,45 +9210,10 @@ return jQuery;
 
 }));
 (function() {
-  var growIt, shrinkIt, time;
-
-  time = 900;
-
-  growIt = function(el) {
-    var height;
-    height = el.height();
-    return el.show().css({
-      display: 'flex',
-      overflow: 'hidden'
-    }).animate({
-      'flex-basis': "+" + height
-    }, time, function() {
-      el.css({
-        display: ''
-      });
-      return el.removeClass('slide--hiding');
-    });
-  };
-
-  shrinkIt = function(el) {
-    var height;
-    height = el.height();
-    return el.animate({
-      'flex-basis': '',
-      'min-height': '',
-      'height': ''
-    }, time, function() {
-      el.css({
-        'flex-basis': '',
-        'min-height': '',
-        'height': '',
-        'overflow': ''
-      });
-      return el.addClass('slide--hiding');
-    });
-  };
+  var growIt, isScrolledIntoView, shrinkIt;
 
   $(function() {
+    var parPosition;
     $('.myform').submit(function(e) {
       var $this;
       e.preventDefault();
@@ -9264,7 +9229,7 @@ return jQuery;
         },
         success: function(data) {
           if (data.result !== "success") {
-
+            $this.closest('.box.newsletter').html("<p>" + data.msg + "</p>");
           } else {
             return $this.closest('.box.newsletter').html("<p>" + data.msg + "</p>");
           }
@@ -9272,19 +9237,22 @@ return jQuery;
       });
       return false;
     });
-    $('#main').scroll(function() {
-      var current_element, divided, element_width, id, offset, positive, prev_id, round;
-      element_width = 400;
-      offset = $('#content').offset();
-      positive = Math.abs(offset.left);
-      divided = positive / element_width;
-      round = Math.round(divided);
-      current_element = $('#content').children().eq(round);
-      id = current_element.attr('id');
-      if (id !== prev_id) {
-        prev_id = id;
-        return console.log(id);
+    parPosition = [];
+    $('.slide:not(.slide--hiding)').each(function() {
+      return parPosition.push($(this).offset().top);
+    });
+    console.dir(parPosition);
+    $(document).on('scroll', function() {
+      var i, index, j, len, pos, position;
+      position = $(document).scrollTop();
+      for (i = j = 0, len = parPosition.length; j < len; i = ++j) {
+        pos = parPosition[i];
+        if (position <= pos) {
+          index = i;
+          break;
+        }
       }
+      return $('.navigation li a').removeClass('active').eq(index).addClass('active');
     });
     $("a[href*=#]:not([href=#])").click(function() {
       var target;
@@ -9311,9 +9279,19 @@ return jQuery;
       }, 900);
     });
     return $('.slide-revealer').on('click', function() {
-      var $this, offset, target, third;
+      var $this, offset, slides, target, third;
       $this = $(this);
       target = $($this.data('target'));
+      slides = $($('.slide-revealer[data-target]').map(function() {
+        return $(this).data('target');
+      }).toArray().join(', '));
+      $('.slide-revealer[data-target]').each(function() {
+        var slide;
+        slide = $($(this).data('target'));
+        if (slide.is(':visible') && slide[0] !== target[0]) {
+          return shrinkIt(slide, 300);
+        }
+      });
       if (target.hasClass('slide--hiding')) {
         growIt(target);
         third = $('#third');
@@ -9331,5 +9309,56 @@ return jQuery;
       }
     });
   });
+
+  growIt = function(el, time) {
+    var height;
+    if (time == null) {
+      time = 900;
+    }
+    height = el.height();
+    return el.show().css({
+      display: 'flex',
+      overflow: 'hidden'
+    }).animate({
+      'flex-basis': "+" + height
+    }, time, function() {
+      el.css({
+        display: ''
+      });
+      return el.removeClass('slide--hiding');
+    });
+  };
+
+  shrinkIt = function(el, time) {
+    var height;
+    if (time == null) {
+      time = 900;
+    }
+    height = el.height();
+    return el.animate({
+      'flex-basis': '',
+      'min-height': '',
+      'height': ''
+    }, time, function() {
+      el.css({
+        'flex-basis': '',
+        'min-height': '',
+        'height': '',
+        'overflow': ''
+      });
+      return el.addClass('slide--hiding');
+    });
+  };
+
+  isScrolledIntoView = function(elem) {
+    var $elem, $window, docViewBottom, docViewTop, elemBottom, elemTop;
+    $elem = $(elem);
+    $window = $(window);
+    docViewTop = $window.scrollTop();
+    docViewBottom = docViewTop + $window.height();
+    elemTop = $elem.offset().top;
+    elemBottom = elemTop + $elem.height();
+    return (elemBottom <= docViewBottom) && (elemTop >= docViewTop);
+  };
 
 }).call(this);
