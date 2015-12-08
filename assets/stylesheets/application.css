@@ -3728,7 +3728,7 @@ body {
   min-height: 100vh;
   box-sizing: border-box;
   padding: 0; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 46.25em) {
     /* line 1, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/blocks/_slides.scss */
     .slide {
       padding: 3.15em; } }
@@ -3779,7 +3779,7 @@ body {
   text-align: center;
   /* will center <p> text, which is not a flex item */
   padding: 0.5em; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 46.25em) {
     /* line 37, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
     .box {
       width: 80%;
@@ -3794,7 +3794,7 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 2.1em; }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 46.25em) {
   /* line 58, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
   .box--small {
     width: 50%; } }
@@ -3847,7 +3847,7 @@ body {
   justify-content: center;
   -ms-flex-pack: center;
   text-align: center; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 46.25em) {
     /* line 80, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
     .picky {
       -webkit-box-orient: horizontal;
@@ -3915,7 +3915,7 @@ body {
   /* line 119, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
   .image:first-child {
     margin-left: 0; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 46.25em) {
     /* line 110, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
     .image {
       width: 150px;
@@ -4148,7 +4148,7 @@ nav li {
   padding: 1.5em;
   position: relative;
   width: 95%; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 46.25em) {
     /* line 86, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/blocks/_modal.scss */
     .modal .modal-inner {
       max-height: 70%;
@@ -4174,7 +4174,7 @@ nav li {
   /* line 124, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/blocks/_modal.scss */
   .modal .modal-inner .modal-content {
     color: #5a5a5a; }
-    @media screen and (min-width: 40em) {
+    @media screen and (min-width: 46.25em) {
       /* line 124, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/blocks/_modal.scss */
       .modal .modal-inner .modal-content {
         -webkit-columns: 2 8em;
