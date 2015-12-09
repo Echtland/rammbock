@@ -4076,30 +4076,37 @@ body {
       -ms-flex-align: center;
           align-items: center; }
 
-/* line 252, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
-nav li {
-  display: block;
-  margin-bottom: 5px; }
-  /* line 256, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
-  nav li:last-child {
-    margin-bottom: 0; }
-  /* line 260, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
-  nav li a {
-    border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.7);
-    box-sizing: border-box;
-    color: white;
+/* line 250, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+nav {
+  display: none; }
+  /* line 252, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+  nav li {
     display: block;
-    height: 20px;
-    width: 20px;
-    -webkit-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in; }
-    /* line 270, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
-    nav li a.active {
-      background-color: rgba(255, 255, 255, 0.7);
-      border-color: rgba(255, 255, 255, 0); }
+    margin-bottom: 5px; }
+    /* line 256, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+    nav li:last-child {
+      margin-bottom: 0; }
+    /* line 260, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+    nav li a {
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.7);
+      box-sizing: border-box;
+      color: white;
+      display: block;
+      height: 20px;
+      width: 20px;
+      -webkit-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in; }
+      /* line 270, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+      nav li a.active {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-color: rgba(255, 255, 255, 0); }
+  @media screen and (min-width: 46.25em) {
+    /* line 250, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+    nav {
+      display: initial; } }
 
-/* line 290, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 283, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -4107,7 +4114,7 @@ nav li {
   padding-top: 25px;
   height: 0; }
 
-/* line 296, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 289, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .videoWrapper iframe {
   position: absolute;
   top: 0;
