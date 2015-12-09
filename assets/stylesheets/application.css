@@ -3803,50 +3803,56 @@ body {
   z-index: 1;
   width: 100%;
   text-align: center;
-  /* will center <p> text, which is not a flex item */
-  padding: 0.5em; }
+  /* will center <p> text, which is not a flex item */ }
   @media screen and (min-width: 46.25em) {
     /* line 37, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
     .box {
-      width: 80%;
+      width: 80%; } }
+
+/* line 47, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+.box--presenter {
+  padding: 0.5em; }
+  @media screen and (min-width: 46.25em) {
+    /* line 47, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+    .box--presenter {
       padding: 3.15em; } }
 
-/* line 50, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 55, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .box--full {
   padding: 0; }
 
-/* line 54, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 59, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .box--rise {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 2.1em; }
   @media screen and (min-width: 46.25em) {
-    /* line 54, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+    /* line 59, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
     .box--rise {
       padding: 2.1em; } }
 
-/* line 63, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 68, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .box--small {
   width: 100%; }
   @media screen and (min-width: 46.25em) {
-    /* line 63, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+    /* line 68, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
     .box--small {
       width: 70%; } }
 
-/* line 70, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 75, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .box-table {
   display: table; }
 
-/* line 75, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 80, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .box-social a {
   display: inline-block;
   padding: 5px;
   -webkit-transition: opacity 0.1s ease-in-out;
   transition: opacity 0.1s ease-in-out; }
-  /* line 80, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+  /* line 85, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
   .box-social a:hover {
     opacity: 0.8; }
 
-/* line 86, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 91, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .picky {
   display: -webkit-box;
   display: -moz-box;
@@ -3881,7 +3887,7 @@ body {
   -ms-flex-pack: center;
   text-align: center; }
   @media screen and (min-width: 46.25em) {
-    /* line 86, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+    /* line 91, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
     .picky {
       -webkit-box-orient: horizontal;
       box-orient: horizontal;
@@ -3892,13 +3898,13 @@ body {
       flex-direction: row;
       -ms-flex-direction: row; } }
 
-/* line 98, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 103, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .slide-starter {
   background-image: url("../images/bg.jpg");
   background-position: center;
   background-size: cover; }
 
-/* line 104, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 109, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 #video-background {
   /*  making the video fullscreen  */
   position: absolute;
@@ -3909,7 +3915,7 @@ body {
   width: auto;
   height: auto; }
 
-/* line 116, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 121, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .image {
   display: -webkit-box;
   display: -moz-box;
@@ -3945,17 +3951,17 @@ body {
   width: 100%;
   height: 150px;
   cursor: pointer; }
-  /* line 125, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+  /* line 130, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
   .image:first-child {
     margin-left: 0; }
   @media screen and (min-width: 46.25em) {
-    /* line 116, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+    /* line 121, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
     .image {
       width: 150px;
       margin-left: 0.5em;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75); } }
 
-/* line 137, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 142, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .image--vignette:before {
   content: ' ';
   display: block;
@@ -3968,91 +3974,91 @@ body {
   width: 100%;
   height: 100%; }
 
-/* line 149, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 154, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .image-1 {
   background-image: url("../images/bg.jpg");
   background-position: center;
   background-size: cover; }
 
-/* line 155, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 160, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .image-2 {
   background-image: url("../images/bg.jpg");
   background-position: center;
   background-size: cover; }
 
-/* line 161, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 166, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .image-3 {
   background-image: url("../images/bg.jpg");
   background-position: center;
   background-size: cover; }
 
-/* line 167, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 172, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .image-4 {
   background-image: url("../images/bg.jpg");
   background-position: center;
   background-size: cover; }
 
-/* line 173, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 178, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .image-5 {
   background-image: url("../images/bg.jpg");
   background-position: center;
   background-size: cover; }
 
-/* line 179, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 184, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .image-kontur {
   background-image: url("../images/kontur1.jpg");
   background-position: center;
   background-size: cover; }
 
-/* line 185, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 190, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .image-kontur--karte {
   background-image: url("../images/kontur2.jpg");
   background-position: center;
   background-size: cover; }
 
-/* line 191, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 196, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .image-group {
   background-image: url("../images/gruppe.jpg");
   background-position: center;
   background-size: cover; }
 
-/* line 197, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 202, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .image-dice {
   background-image: url("../images/wuerfel.jpg");
   background-position: center;
   background-size: cover; }
 
-/* line 203, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 208, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .image-manifest {
   background-image: url("../images/manifest.jpg");
   background-position: center;
   background-size: cover; }
 
-/* line 209, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 214, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .image-walter {
   background-image: url("../images/walter.jpg");
   background-position: center;
   background-size: cover; }
 
-/* line 215, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 220, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .image-packmas {
   background-image: url("../images/packmas.jpg");
   background-position: center;
   background-size: cover; }
 
-/* line 221, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 226, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .image-footer {
   background-image: url("../images/footer.jpg");
   background-position: center;
   background-size: cover; }
 
-/* line 227, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 232, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .image-still {
   background-image: url("../images/still.jpg");
   background-position: center;
   background-size: cover; }
 
-/* line 233, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 238, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .navigation {
   position: fixed;
   top: 0;
@@ -4070,14 +4076,14 @@ body {
       -ms-flex-align: center;
           align-items: center; }
 
-/* line 247, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 252, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 nav li {
   display: block;
   margin-bottom: 5px; }
-  /* line 251, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+  /* line 256, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
   nav li:last-child {
     margin-bottom: 0; }
-  /* line 255, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+  /* line 260, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
   nav li a {
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.7);
@@ -4088,12 +4094,12 @@ nav li {
     width: 20px;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in; }
-    /* line 265, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+    /* line 270, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
     nav li a.active {
       background-color: rgba(255, 255, 255, 0.7);
       border-color: rgba(255, 255, 255, 0); }
 
-/* line 285, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 290, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -4101,7 +4107,7 @@ nav li {
   padding-top: 25px;
   height: 0; }
 
-/* line 291, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
+/* line 296, /Volumes/Data/hiasinho/Sites/bewegen/source/assets/stylesheets/_global.scss */
 .videoWrapper iframe {
   position: absolute;
   top: 0;
